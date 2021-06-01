@@ -6,7 +6,7 @@ URL = http://IPADDRESS:PORT/predict
 
 Features
 | Features                | Description                                                             | 
-| ----------------------- |:-----------------------------------------------------------------------:| 
+| ----------------------- | ----------------------------------------------------------------------- | 
 | Wait                    | Predicted Feature                                                       |
 | DelayCount              | Number of delayed exams up to current time of day.                      |
 | DelayCountLastHour      | Number of delayed exams in last hour.                                   |
