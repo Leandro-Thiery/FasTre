@@ -43,21 +43,16 @@ Source data = https://www.kaggle.com/weirdolucifer/medical-facility-operational-
 Input body =  
 ```json
 {
-  "data": [
-    [
-      0,0,9,1,0,0,6,
-      17,13,1,0,4,7,
-      212,1,62,3,8,13,2,
-      3,12,1,0,3,0,0,18
+    "data":[
+        [0,0,0,1,0,0,0,0,0,1,1,4,1,0,0,0,0,0,0,0,0,5,0,0,0,0,9,0]
     ]
-  ]
 }
 ```
 28 values are required. To predict more than once, insert multiple 28 arrays (size of nx28)
 
 Result data =  
 ```json
-{"result": [718.8391723632812]}
+{"result": [5.218322277069092]}
 ```
 
 Example of multiple predictions =
