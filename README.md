@@ -11,6 +11,7 @@ URL = http://IPADDRESS:PORT/predict
 * Run program using `flask run`
 
 # Deployment in Google Cloud
+This project is used to perform the data analysis model. To deploy the machine learning model, we first containerize our Flask application which imported the model. Then Cloud Run is deployed using the container (Stored in Container Registry) created a scalable deployment. Through GCP, we also use Firestore Database to store pieces of information about news and hospitals. Cloud Storage buckets are also created and used for additional objects such as images and the container itself.
 * Clone source code in Cloud Shell
 * Use `gcloud gcloud builds submit --tag gcr.io/PROJECT_ID/IMAGE_NAME` to submit container image to Container Registry
 * Deploy image in Cloud Run
