@@ -4,10 +4,22 @@ Flask app to deploy ML prediction on hospital waiting time
 
 URL = http://IPADDRESS:PORT/predict
 
+# Setup
+* Clone repository
+* Install requirements using `pip3 install -r requirements.txt`
+* Set environment variable `FLASK_APP=main` to run using flask
+* Run program using `flask run`
+
+# Deployment in Google Cloud
+* Clone source code in Cloud Shell
+* Use `gcloud gcloud builds submit --tag gcr.io/PROJECT_ID/IMAGE_NAME` to submit container image to Container Registry
+* Deploy image in Cloud Run
+
+# Features Used for input
 Features
 | Features                | Description                                                             | 
 | ----------------------- | ----------------------------------------------------------------------- | 
-| Wait                    | Predicted Feature                                                       |
+| Wait                    | Predicted Feature of wait time in minutes                               |
 | DelayCount              | Number of delayed exams up to current time of day.                      |
 | DelayCountLastHour      | Number of delayed exams in last hour.                                   |
 | AheadCount              | Number of patients scheduled before current patient for the day.        |
